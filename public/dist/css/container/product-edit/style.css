@@ -1,0 +1,77 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 32px;
+}
+.form__title {
+  color: rgb(60, 103, 231);
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ddd;
+}
+.form__content {
+  display: grid;
+  gap: 24px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form__label {
+  font-size: 16px;
+}
+.form__input {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 10px;
+}
+.form__label__input {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.form__button {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  gap: 16px;
+}
+.form .btn-primary {
+  display: inline;
+  flex-direction: row;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(18, 129, 247);
+  border: 1px solid #ddd;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 10px;
+  width: 350px;
+}
+.form .btn-danger {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(245, 9, 9);
+  border: 1px solid #ddd;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.user__list li {
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

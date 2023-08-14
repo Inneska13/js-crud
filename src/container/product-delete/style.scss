@@ -1,12 +1,8 @@
-
-.btn{
-	color:#fff;
-	text-decoration: none;
-	
+.btn-primary{
 	display: inline;
 	flex-direction: row;
 	width: 250px;
-	height: 0px;
+	height: 60px;
 
 	
 	background-color: rgb(18, 129, 247);
@@ -14,4 +10,11 @@
     padding: 12px;
 	gap:12px;
 	border-radius:10px;
+	
+}
+.btn{
+	color:#fff;
+	text-decoration: none;
+	
+	
 }
