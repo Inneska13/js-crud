@@ -274,8 +274,7 @@ router.post('/product-edit', function (req, res) {
 
 router.get('/product-delete', function (req, res) {
   const { id } = req.query
-
-  Product.getById(Number(id))
+  Product.deleteById(Number(id))
 
   res.render('alert', {
     style: 'alert',
