@@ -88,7 +88,7 @@ class Product {
     this.name = name
     this.price = price
     this.description = description
-    this.id = Math.random(id)
+    this.id = Math.floor(Math.random() * 100000)
 
     this.createDate = () => {
       this.date = new Date().toISOString()
@@ -128,11 +128,32 @@ class Product {
     }
   }
 
-  //   static update = (user, { email }) => {
-  //     if (email) {
-  //       user.email = email
-  //     }
-  //   }
+  static update = (name, { product }) => {
+    if (name) {
+      product.name = name
+    }
+  }
+
+  static updateById = (id, data) => {
+    const product = this.getById(id)
+    const { name, price } = data
+
+    if (product) {
+      product.name = name
+      product.price = price
+
+      return true
+    } else {
+      return false
+    }
+  }
+
+  static update = (name, price, { product }) => {
+    if (name) {
+      product.name = name
+      product.price = price
+    }
+  }
 }
 
 // ================================================
@@ -200,7 +221,7 @@ router.get('/product-list', function (req, res) {
 // ================================================================
 
 router.get('/product-edit', function (req, res) {
-  const { id } = req.body
+  const { id } = req.query
 
   const product = Product.getById(Number(id))
 
