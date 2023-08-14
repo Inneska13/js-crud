@@ -1,6 +1,8 @@
 .btn-primary {
   display: inline;
   flex-direction: row;
+  width: 250px;
+  height: 60px;
   background-color: rgb(18, 129, 247);
   border: 1px solid #ddd;
   padding: 12px;
