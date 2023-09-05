@@ -12,23 +12,27 @@
 	padding: s.space(10);
 }
 
-.form-card {
+.purchase-item {
 	width: 100%;
 	display: flex;
+	flex-direction: row;
+	gap: s.space(10);
+	padding: s.space(10);
+	color:black;
+	
+}
+
+.purchase__info{
+	text-decoration: none;
+}
+
+.purchase-item__block {
+
+    display: flex;
 	flex-direction: column;
-	gap: s.space(5);
-	padding: s.space(5);
-	border: 1px solid s.color('border');
-    border-radius: 10px;
+    gap: s.space(10) ;
 }
 
-.cart {
-
-    display: grid;
-    gap: s.space(2) ;
-}
-
-.cart__item {
-	display: flex;
-	justify-content: space-between;
+.title {
+	color: gray;
 }

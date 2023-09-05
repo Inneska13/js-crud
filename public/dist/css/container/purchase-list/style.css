@@ -63,24 +63,27 @@
   padding: 40px;
 }
 
-.form-card {
+.purchase-item {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  border: 1px solid #CED4DA;
-  border-radius: 10px;
+  flex-direction: row;
+  gap: 40px;
+  padding: 40px;
+  color: black;
 }
 
-.cart {
-  display: grid;
-  gap: 8px;
+.purchase__info {
+  text-decoration: none;
 }
 
-.cart__item {
+.purchase-item__block {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title {
+  color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */

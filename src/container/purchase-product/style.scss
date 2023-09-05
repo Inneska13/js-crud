@@ -4,12 +4,13 @@
 @use '../../component/purchase-product/style.scss' as purchaseProduct;
 @use '../../component/field/style.scss' as field;
 @use '../../component/button/style.scss' as button;
+@use '../../component/divider/style.scss' as divider;
 
 .main {
 	display: flex;
 	flex-direction: column;
-	gap: s.space(10);
-	padding: s.space(10);
+	gap: 20px;
+	padding: 20px;
 }
 
 .product-info {
@@ -58,16 +59,18 @@ color: s.color(gray);
 	border-color: green;
 	color: green;
 }
-
-.product-info__button {
-    background-color: rgb(47, 117, 223);
-    color:#fff;
+.button{
+	background-color: s.color(main);
+	color: white;
 	border: none;
-    border-radius: 5px;
+	border-radius: 10px;
     padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    &:hover
-    {opacity: 0.7;}
+	font-size: 16px;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+	
+	&:hover {
+		opacity: 0.7;
+	}
 }
+
