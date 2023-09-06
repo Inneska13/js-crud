@@ -1,0 +1,38 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/field/style.scss' as field;
+@use '../../component/button/style.scss' as button;
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(10);
+	padding: s.space(10);
+}
+
+.purchase-item {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: s.space(10);
+	padding: s.space(10);
+	color:black;
+	
+}
+
+.purchase__info{
+	text-decoration: none;
+}
+
+.purchase-item__block {
+
+    display: flex;
+	flex-direction: column;
+    gap: s.space(10) ;
+}
+
+.title {
+	color: gray;
+}
