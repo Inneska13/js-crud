@@ -1,0 +1,97 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+{{!-- <main class='main'>
+  {{#with data}}
+    <div class='main__content'>
+      <h1 class='title title--center'>Моя бібліотека</h1>
+
+      <form method='POST' action='/spotify-search'>
+
+        <button class='search__button'><a
+            href='/spotify-search'
+          >
+            <img
+              src='svg/spotify-search.svg'
+            /></a></button>
+        <a href='/spotify-choose'>
+          <img src='svg/add_button.svg' /></a>
+      </form>
+
+      <ul class='playlist__ist'>
+        {{#each list}}
+          <li class='playlist'>
+            <img
+              src='{{image}}'
+              alt='{{name}}'
+              height='100px'
+            />
+            <div class='playlist__content'>
+              <strong
+                class='playlist__name'
+              >{{name}}</strong>
+              <span class='playlist__amount'>Кількість
+                пісень:
+                {{amount}}
+              </span>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/with}}
+</main> --}}
+
+<main class='main'>
+  {{#with data}}
+    <div class='main__content'>
+      <header class='header'>
+        <h1 class='title header-title'>Моя бібліотека</h1>
+        <div class='header__icons'>
+          <a href='/spotify-search' class='header__icon'>
+            <img
+              src='svg/spotify-search.svg'
+              alt='search'
+              class='icon'
+              height='20px'
+              width='20px'
+            />
+          </a>
+          <a href='/spotify-choose' class='header__icon'>
+            <img
+              src='svg/add_button.svg'
+              alt='add'
+              class='icon'
+              height='30px'
+              width='30px'
+            />
+          </a>
+        </div>
+      </header>
+
+      <ul class='playlist__list'>
+        {{#each list}}
+          <a
+            href='/spotify-track-add?playlistId={{id}}'
+            class='playlist__item'
+          >
+            <li class='playlist__content'>
+              <img
+                src='{{image}}'
+                alt=''
+                class='playlist__image'
+              />
+              <strong class='title'>{{name}}</strong>
+              <p class='text'>{{amount}} пісень</p>
+            </li>
+          </a>
+        {{/each}}
+      </ul>
+    </div>
+  {{/with}}
+</main>
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}
